@@ -1,0 +1,278 @@
+Using cuda device
+Logging to runs/3s6obfdf/PPO_1
+Saving video to /home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/3s6obfdf/rl-video-step-0-to-step-200.mp4
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 22.6     |
+|    ep_rew_mean     | 22.6     |
+| time/              |          |
+|    fps             | 760      |
+|    iterations      | 1        |
+|    time_elapsed    | 2        |
+|    total_timesteps | 2048     |
+---------------------------------
+Saving video to /home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/3s6obfdf/rl-video-step-2000-to-step-2200.mp4
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 28          |
+|    ep_rew_mean          | 28          |
+| time/                   |             |
+|    fps                  | 684         |
+|    iterations           | 2           |
+|    time_elapsed         | 5           |
+|    total_timesteps      | 4096        |
+| train/                  |             |
+|    approx_kl            | 0.009578242 |
+|    clip_fraction        | 0.127       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.685      |
+|    explained_variance   | -0.0141     |
+|    learning_rate        | 0.0003      |
+|    loss                 | 8.12        |
+|    n_updates            | 10          |
+|    policy_gradient_loss | -0.0197     |
+|    value_loss           | 56.4        |
+-----------------------------------------
+Saving video to /home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/3s6obfdf/rl-video-step-4000-to-step-4200.mp4
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 35.1        |
+|    ep_rew_mean          | 35.1        |
+| time/                   |             |
+|    fps                  | 664         |
+|    iterations           | 3           |
+|    time_elapsed         | 9           |
+|    total_timesteps      | 6144        |
+| train/                  |             |
+|    approx_kl            | 0.008637572 |
+|    clip_fraction        | 0.0539      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.667      |
+|    explained_variance   | 0.0653      |
+|    learning_rate        | 0.0003      |
+|    loss                 | 11.7        |
+|    n_updates            | 20          |
+|    policy_gradient_loss | -0.0158     |
+|    value_loss           | 35.7        |
+-----------------------------------------
+Saving video to /home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/3s6obfdf/rl-video-step-6000-to-step-6200.mp4
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 45.7        |
+|    ep_rew_mean          | 45.7        |
+| time/                   |             |
+|    fps                  | 637         |
+|    iterations           | 4           |
+|    time_elapsed         | 12          |
+|    total_timesteps      | 8192        |
+| train/                  |             |
+|    approx_kl            | 0.009958477 |
+|    clip_fraction        | 0.11        |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.632      |
+|    explained_variance   | 0.285       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 23.4        |
+|    n_updates            | 30          |
+|    policy_gradient_loss | -0.0215     |
+|    value_loss           | 50.7        |
+-----------------------------------------
+Saving video to /home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/3s6obfdf/rl-video-step-8000-to-step-8200.mp4
+Saving video to /home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/3s6obfdf/rl-video-step-10000-to-step-10200.mp4
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 59.9        |
+|    ep_rew_mean          | 59.9        |
+| time/                   |             |
+|    fps                  | 631         |
+|    iterations           | 5           |
+|    time_elapsed         | 16          |
+|    total_timesteps      | 10240       |
+| train/                  |             |
+|    approx_kl            | 0.007482852 |
+|    clip_fraction        | 0.0808      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.611      |
+|    explained_variance   | 0.341       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 40.4        |
+|    n_updates            | 40          |
+|    policy_gradient_loss | -0.0196     |
+|    value_loss           | 72.2        |
+-----------------------------------------
+Saving video to /home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/3s6obfdf/rl-video-step-12000-to-step-12200.mp4
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 74.1        |
+|    ep_rew_mean          | 74.1        |
+| time/                   |             |
+|    fps                  | 631         |
+|    iterations           | 6           |
+|    time_elapsed         | 19          |
+|    total_timesteps      | 12288       |
+| train/                  |             |
+|    approx_kl            | 0.012568576 |
+|    clip_fraction        | 0.0886      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.593      |
+|    explained_variance   | 0.438       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 19.7        |
+|    n_updates            | 50          |
+|    policy_gradient_loss | -0.0148     |
+|    value_loss           | 63.6        |
+-----------------------------------------
+Saving video to /home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/3s6obfdf/rl-video-step-14000-to-step-14200.mp4
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 90          |
+|    ep_rew_mean          | 90          |
+| time/                   |             |
+|    fps                  | 628         |
+|    iterations           | 7           |
+|    time_elapsed         | 22          |
+|    total_timesteps      | 14336       |
+| train/                  |             |
+|    approx_kl            | 0.007139591 |
+|    clip_fraction        | 0.0342      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.581      |
+|    explained_variance   | 0.269       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 18.7        |
+|    n_updates            | 60          |
+|    policy_gradient_loss | -0.00658    |
+|    value_loss           | 75.8        |
+-----------------------------------------
+Saving video to /home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/3s6obfdf/rl-video-step-16000-to-step-16200.mp4
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 107         |
+|    ep_rew_mean          | 107         |
+| time/                   |             |
+|    fps                  | 627         |
+|    iterations           | 8           |
+|    time_elapsed         | 26          |
+|    total_timesteps      | 16384       |
+| train/                  |             |
+|    approx_kl            | 0.007091956 |
+|    clip_fraction        | 0.0764      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.592      |
+|    explained_variance   | 0.698       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 20.7        |
+|    n_updates            | 70          |
+|    policy_gradient_loss | -0.0133     |
+|    value_loss           | 42.1        |
+-----------------------------------------
+Saving video to /home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/3s6obfdf/rl-video-step-18000-to-step-18200.mp4
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 123         |
+|    ep_rew_mean          | 123         |
+| time/                   |             |
+|    fps                  | 627         |
+|    iterations           | 9           |
+|    time_elapsed         | 29          |
+|    total_timesteps      | 18432       |
+| train/                  |             |
+|    approx_kl            | 0.004606704 |
+|    clip_fraction        | 0.0439      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.571      |
+|    explained_variance   | 0.683       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 20.3        |
+|    n_updates            | 80          |
+|    policy_gradient_loss | -0.00893    |
+|    value_loss           | 56.2        |
+-----------------------------------------
+Saving video to /home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/3s6obfdf/rl-video-step-20000-to-step-20200.mp4
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 144         |
+|    ep_rew_mean          | 144         |
+| time/                   |             |
+|    fps                  | 627         |
+|    iterations           | 10          |
+|    time_elapsed         | 32          |
+|    total_timesteps      | 20480       |
+| train/                  |             |
+|    approx_kl            | 0.009244626 |
+|    clip_fraction        | 0.0792      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.566      |
+|    explained_variance   | 0.829       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 9.61        |
+|    n_updates            | 90          |
+|    policy_gradient_loss | -0.00649    |
+|    value_loss           | 28.1        |
+-----------------------------------------
+Saving video to /home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/3s6obfdf/rl-video-step-22000-to-step-22200.mp4
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 160          |
+|    ep_rew_mean          | 160          |
+| time/                   |              |
+|    fps                  | 626          |
+|    iterations           | 11           |
+|    time_elapsed         | 35           |
+|    total_timesteps      | 22528        |
+| train/                  |              |
+|    approx_kl            | 0.0044208546 |
+|    clip_fraction        | 0.0282       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -0.552       |
+|    explained_variance   | 0.765        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 8.06         |
+|    n_updates            | 100          |
+|    policy_gradient_loss | -0.0028      |
+|    value_loss           | 37.4         |
+------------------------------------------
+Saving video to /home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/3s6obfdf/rl-video-step-24000-to-step-24200.mp4
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 176          |
+|    ep_rew_mean          | 176          |
+| time/                   |              |
+|    fps                  | 628          |
+|    iterations           | 12           |
+|    time_elapsed         | 39           |
+|    total_timesteps      | 24576        |
+| train/                  |              |
+|    approx_kl            | 0.0042429273 |
+|    clip_fraction        | 0.0444       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -0.535       |
+|    explained_variance   | 0.827        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 7.84         |
+|    n_updates            | 110          |
+|    policy_gradient_loss | -0.00817     |
+|    value_loss           | 12.3         |
+------------------------------------------
+Saving video to /home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/3s6obfdf/rl-video-step-26000-to-step-26200.mp4
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 192          |
+|    ep_rew_mean          | 192          |
+| time/                   |              |
+|    fps                  | 626          |
+|    iterations           | 13           |
+|    time_elapsed         | 42           |
+|    total_timesteps      | 26624        |
+| train/                  |              |
+|    approx_kl            | 0.0073785177 |
+|    clip_fraction        | 0.0486       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -0.534       |
+|    explained_variance   | 0.948        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 1.12         |
+|    n_updates            | 120          |
+|    policy_gradient_loss | -0.0037      |
+|    value_loss           | 7.06         |
+------------------------------------------

@@ -34,3 +34,10 @@ rank2_tensor = tf.Variable([["This", "is"],["a", " rank 2 tensor"]], tf.string)
 # To get a tensor we can use a tf.rank command
 print("  This is a rank of rank1_tensor", tf.rank(rank1_tensor))
 print("  This is a rank of rank2_tensor", tf.rank(rank2_tensor))
+
+# tensorflow size
+#
+# this returns the size of the tensor. a simple tensor with all zeros or all ones can be created with tf.zeros([3,4,3]) or tf.ones([3,4,3]) , creates a tensor with 3 rows, 4 columns, and 3 channels filled with the elements.
+tf_ones = tf.ones([3,4,3])
+tf_zeros = tf.zeros([3,4,3])
+

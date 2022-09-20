@@ -1,0 +1,793 @@
+Submodule learnRL/pytorch_car_caring contains untracked content
+Submodule learnRL/pytorch_car_caring contains modified content
+diff --git a/learnRL/pytorch_car_caring/README.md b/learnRL/pytorch_car_caring/README.md
+index 411ff58..232b8ab 100644
+--- a/learnRL/pytorch_car_caring/README.md
++++ b/learnRL/pytorch_car_caring/README.md
+@@ -1,3 +1,4 @@
++
+ # Car Racing with PyTorch
+ Solving the car racing problem in OpenAI Gym using Proximal Policy Optimization (PPO). This problem has a real physical engine in the back end. You can achieve real racing actions in the environment, like drifting. 
+ 
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/10000 run_0/events.out.tfevents.1650653957.gauravb-ThinkStation-P340.73976.0 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/10000 run_0/events.out.tfevents.1650653957.gauravb-ThinkStation-P340.73976.0
+new file mode 100644
+index 0000000..ba1f615
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/10000 run_0/events.out.tfevents.1650653957.gauravb-ThinkStation-P340.73976.0 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/100000 run_0/events.out.tfevents.1650654068.gauravb-ThinkStation-P340.73976.9 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/100000 run_0/events.out.tfevents.1650654068.gauravb-ThinkStation-P340.73976.9
+new file mode 100644
+index 0000000..a5d67cf
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/100000 run_0/events.out.tfevents.1650654068.gauravb-ThinkStation-P340.73976.9 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/110000 run_0/events.out.tfevents.1650654080.gauravb-ThinkStation-P340.73976.10 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/110000 run_0/events.out.tfevents.1650654080.gauravb-ThinkStation-P340.73976.10
+new file mode 100644
+index 0000000..09620f9
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/110000 run_0/events.out.tfevents.1650654080.gauravb-ThinkStation-P340.73976.10 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/120000 run_0/events.out.tfevents.1650654092.gauravb-ThinkStation-P340.73976.11 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/120000 run_0/events.out.tfevents.1650654092.gauravb-ThinkStation-P340.73976.11
+new file mode 100644
+index 0000000..f50cb58
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/120000 run_0/events.out.tfevents.1650654092.gauravb-ThinkStation-P340.73976.11 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/130000 run_0/events.out.tfevents.1650654105.gauravb-ThinkStation-P340.73976.12 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/130000 run_0/events.out.tfevents.1650654105.gauravb-ThinkStation-P340.73976.12
+new file mode 100644
+index 0000000..8d2a4c8
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/130000 run_0/events.out.tfevents.1650654105.gauravb-ThinkStation-P340.73976.12 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/140000 run_0/events.out.tfevents.1650654116.gauravb-ThinkStation-P340.73976.13 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/140000 run_0/events.out.tfevents.1650654116.gauravb-ThinkStation-P340.73976.13
+new file mode 100644
+index 0000000..74f89ea
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/140000 run_0/events.out.tfevents.1650654116.gauravb-ThinkStation-P340.73976.13 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/150000 run_0/events.out.tfevents.1650654129.gauravb-ThinkStation-P340.73976.14 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/150000 run_0/events.out.tfevents.1650654129.gauravb-ThinkStation-P340.73976.14
+new file mode 100644
+index 0000000..22ce440
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/150000 run_0/events.out.tfevents.1650654129.gauravb-ThinkStation-P340.73976.14 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/160000 run_0/events.out.tfevents.1650654141.gauravb-ThinkStation-P340.73976.15 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/160000 run_0/events.out.tfevents.1650654141.gauravb-ThinkStation-P340.73976.15
+new file mode 100644
+index 0000000..7733ef0
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/160000 run_0/events.out.tfevents.1650654141.gauravb-ThinkStation-P340.73976.15 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/170000 run_0/events.out.tfevents.1650654153.gauravb-ThinkStation-P340.73976.16 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/170000 run_0/events.out.tfevents.1650654153.gauravb-ThinkStation-P340.73976.16
+new file mode 100644
+index 0000000..82157c3
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/170000 run_0/events.out.tfevents.1650654153.gauravb-ThinkStation-P340.73976.16 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/180000 run_0/events.out.tfevents.1650654165.gauravb-ThinkStation-P340.73976.17 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/180000 run_0/events.out.tfevents.1650654165.gauravb-ThinkStation-P340.73976.17
+new file mode 100644
+index 0000000..1f14c46
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/180000 run_0/events.out.tfevents.1650654165.gauravb-ThinkStation-P340.73976.17 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/190000 run_0/events.out.tfevents.1650654178.gauravb-ThinkStation-P340.73976.18 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/190000 run_0/events.out.tfevents.1650654178.gauravb-ThinkStation-P340.73976.18
+new file mode 100644
+index 0000000..1401518
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/190000 run_0/events.out.tfevents.1650654178.gauravb-ThinkStation-P340.73976.18 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/20000 run_0/events.out.tfevents.1650653970.gauravb-ThinkStation-P340.73976.1 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/20000 run_0/events.out.tfevents.1650653970.gauravb-ThinkStation-P340.73976.1
+new file mode 100644
+index 0000000..a883352
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/20000 run_0/events.out.tfevents.1650653970.gauravb-ThinkStation-P340.73976.1 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/200000 run_0/events.out.tfevents.1650654190.gauravb-ThinkStation-P340.73976.19 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/200000 run_0/events.out.tfevents.1650654190.gauravb-ThinkStation-P340.73976.19
+new file mode 100644
+index 0000000..ccc9024
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/200000 run_0/events.out.tfevents.1650654190.gauravb-ThinkStation-P340.73976.19 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/210000 run_0/events.out.tfevents.1650654204.gauravb-ThinkStation-P340.73976.20 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/210000 run_0/events.out.tfevents.1650654204.gauravb-ThinkStation-P340.73976.20
+new file mode 100644
+index 0000000..b501554
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/210000 run_0/events.out.tfevents.1650654204.gauravb-ThinkStation-P340.73976.20 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/220000 run_0/events.out.tfevents.1650654219.gauravb-ThinkStation-P340.73976.21 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/220000 run_0/events.out.tfevents.1650654219.gauravb-ThinkStation-P340.73976.21
+new file mode 100644
+index 0000000..a707211
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/220000 run_0/events.out.tfevents.1650654219.gauravb-ThinkStation-P340.73976.21 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/230000 run_0/events.out.tfevents.1650654233.gauravb-ThinkStation-P340.73976.22 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/230000 run_0/events.out.tfevents.1650654233.gauravb-ThinkStation-P340.73976.22
+new file mode 100644
+index 0000000..a9e5b7e
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/230000 run_0/events.out.tfevents.1650654233.gauravb-ThinkStation-P340.73976.22 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/240000 run_0/events.out.tfevents.1650654248.gauravb-ThinkStation-P340.73976.23 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/240000 run_0/events.out.tfevents.1650654248.gauravb-ThinkStation-P340.73976.23
+new file mode 100644
+index 0000000..b82d5b0
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/240000 run_0/events.out.tfevents.1650654248.gauravb-ThinkStation-P340.73976.23 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/250000 run_0/events.out.tfevents.1650654261.gauravb-ThinkStation-P340.73976.24 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/250000 run_0/events.out.tfevents.1650654261.gauravb-ThinkStation-P340.73976.24
+new file mode 100644
+index 0000000..f479462
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/250000 run_0/events.out.tfevents.1650654261.gauravb-ThinkStation-P340.73976.24 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/260000 run_0/events.out.tfevents.1650654274.gauravb-ThinkStation-P340.73976.25 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/260000 run_0/events.out.tfevents.1650654274.gauravb-ThinkStation-P340.73976.25
+new file mode 100644
+index 0000000..158eafe
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/260000 run_0/events.out.tfevents.1650654274.gauravb-ThinkStation-P340.73976.25 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/270000 run_0/events.out.tfevents.1650654288.gauravb-ThinkStation-P340.73976.26 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/270000 run_0/events.out.tfevents.1650654288.gauravb-ThinkStation-P340.73976.26
+new file mode 100644
+index 0000000..2bc9962
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/270000 run_0/events.out.tfevents.1650654288.gauravb-ThinkStation-P340.73976.26 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/280000 run_0/events.out.tfevents.1650654301.gauravb-ThinkStation-P340.73976.27 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/280000 run_0/events.out.tfevents.1650654301.gauravb-ThinkStation-P340.73976.27
+new file mode 100644
+index 0000000..1aad319
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/280000 run_0/events.out.tfevents.1650654301.gauravb-ThinkStation-P340.73976.27 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/290000 run_0/events.out.tfevents.1650654315.gauravb-ThinkStation-P340.73976.28 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/290000 run_0/events.out.tfevents.1650654315.gauravb-ThinkStation-P340.73976.28
+new file mode 100644
+index 0000000..81ebac6
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/290000 run_0/events.out.tfevents.1650654315.gauravb-ThinkStation-P340.73976.28 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/30000 run_0/events.out.tfevents.1650653983.gauravb-ThinkStation-P340.73976.2 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/30000 run_0/events.out.tfevents.1650653983.gauravb-ThinkStation-P340.73976.2
+new file mode 100644
+index 0000000..8f4b0f9
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/30000 run_0/events.out.tfevents.1650653983.gauravb-ThinkStation-P340.73976.2 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/300000 run_0/events.out.tfevents.1650654332.gauravb-ThinkStation-P340.73976.29 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/300000 run_0/events.out.tfevents.1650654332.gauravb-ThinkStation-P340.73976.29
+new file mode 100644
+index 0000000..d1cc20e
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/300000 run_0/events.out.tfevents.1650654332.gauravb-ThinkStation-P340.73976.29 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/310000 run_0/events.out.tfevents.1650654351.gauravb-ThinkStation-P340.73976.30 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/310000 run_0/events.out.tfevents.1650654351.gauravb-ThinkStation-P340.73976.30
+new file mode 100644
+index 0000000..dc6c4be
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/310000 run_0/events.out.tfevents.1650654351.gauravb-ThinkStation-P340.73976.30 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/320000 run_0/events.out.tfevents.1650654369.gauravb-ThinkStation-P340.73976.31 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/320000 run_0/events.out.tfevents.1650654369.gauravb-ThinkStation-P340.73976.31
+new file mode 100644
+index 0000000..acec7be
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/320000 run_0/events.out.tfevents.1650654369.gauravb-ThinkStation-P340.73976.31 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/330000 run_0/events.out.tfevents.1650654384.gauravb-ThinkStation-P340.73976.32 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/330000 run_0/events.out.tfevents.1650654384.gauravb-ThinkStation-P340.73976.32
+new file mode 100644
+index 0000000..9c1aa92
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/330000 run_0/events.out.tfevents.1650654384.gauravb-ThinkStation-P340.73976.32 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/40000 run_0/events.out.tfevents.1650653996.gauravb-ThinkStation-P340.73976.3 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/40000 run_0/events.out.tfevents.1650653996.gauravb-ThinkStation-P340.73976.3
+new file mode 100644
+index 0000000..657b531
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/40000 run_0/events.out.tfevents.1650653996.gauravb-ThinkStation-P340.73976.3 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/50000 run_0/events.out.tfevents.1650654008.gauravb-ThinkStation-P340.73976.4 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/50000 run_0/events.out.tfevents.1650654008.gauravb-ThinkStation-P340.73976.4
+new file mode 100644
+index 0000000..c07afa3
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/50000 run_0/events.out.tfevents.1650654008.gauravb-ThinkStation-P340.73976.4 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/60000 run_0/events.out.tfevents.1650654020.gauravb-ThinkStation-P340.73976.5 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/60000 run_0/events.out.tfevents.1650654020.gauravb-ThinkStation-P340.73976.5
+new file mode 100644
+index 0000000..3401543
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/60000 run_0/events.out.tfevents.1650654020.gauravb-ThinkStation-P340.73976.5 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/70000 run_0/events.out.tfevents.1650654032.gauravb-ThinkStation-P340.73976.6 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/70000 run_0/events.out.tfevents.1650654032.gauravb-ThinkStation-P340.73976.6
+new file mode 100644
+index 0000000..d6103b7
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/70000 run_0/events.out.tfevents.1650654032.gauravb-ThinkStation-P340.73976.6 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/80000 run_0/events.out.tfevents.1650654044.gauravb-ThinkStation-P340.73976.7 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/80000 run_0/events.out.tfevents.1650654044.gauravb-ThinkStation-P340.73976.7
+new file mode 100644
+index 0000000..c18574b
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/80000 run_0/events.out.tfevents.1650654044.gauravb-ThinkStation-P340.73976.7 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/90000 run_0/events.out.tfevents.1650654057.gauravb-ThinkStation-P340.73976.8 b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/90000 run_0/events.out.tfevents.1650654057.gauravb-ThinkStation-P340.73976.8
+new file mode 100644
+index 0000000..3a60195
+Binary files /dev/null and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/90000 run_0/events.out.tfevents.1650654057.gauravb-ThinkStation-P340.73976.8 differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint10000.zip b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint10000.zip
+index 5d0c032..d33ddf8 100644
+Binary files a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint10000.zip and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint10000.zip differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint100000.zip b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint100000.zip
+index 898254e..377ffbc 100644
+Binary files a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint100000.zip and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint100000.zip differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint110000.zip b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint110000.zip
+index 2f839eb..c35a900 100644
+Binary files a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint110000.zip and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint110000.zip differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint120000.zip b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint120000.zip
+index 249af54..12cfd57 100644
+Binary files a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint120000.zip and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint120000.zip differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint130000.zip b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint130000.zip
+index 135f7ea..aa78d7d 100644
+Binary files a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint130000.zip and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint130000.zip differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint140000.zip b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint140000.zip
+index fa047fa..a8ffeff 100644
+Binary files a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint140000.zip and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint140000.zip differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint150000.zip b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint150000.zip
+index 25cf8e4..b234e07 100644
+Binary files a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint150000.zip and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint150000.zip differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint160000.zip b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint160000.zip
+index 72cd6b1..89ca0e3 100644
+Binary files a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint160000.zip and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint160000.zip differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint170000.zip b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint170000.zip
+index 0145360..6f3ad68 100644
+Binary files a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint170000.zip and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint170000.zip differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint180000.zip b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint180000.zip
+index 86dd4c4..e06de8c 100644
+Binary files a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint180000.zip and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint180000.zip differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint190000.zip b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint190000.zip
+index 019f647..81e8cfd 100644
+Binary files a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint190000.zip and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint190000.zip differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint20000.zip b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint20000.zip
+index 980b8a5..59a97e8 100644
+Binary files a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint20000.zip and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint20000.zip differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint200000.zip b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint200000.zip
+index 326abd6..630eae9 100644
+Binary files a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint200000.zip and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint200000.zip differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint210000.zip b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint210000.zip
+index a15aaca..5da7e86 100644
+Binary files a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint210000.zip and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint210000.zip differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint220000.zip b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint220000.zip
+index 88265ae..9e8b69a 100644
+Binary files a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint220000.zip and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint220000.zip differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint230000.zip b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint230000.zip
+index 9d62eb5..1d17994 100644
+Binary files a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint230000.zip and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint230000.zip differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint240000.zip b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint240000.zip
+index 1d3f822..3c8cb0f 100644
+Binary files a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint240000.zip and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint240000.zip differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint250000.zip b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint250000.zip
+index 9a2f8ae..eef82ec 100644
+Binary files a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint250000.zip and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint250000.zip differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint260000.zip b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint260000.zip
+index dda05ab..da71cad 100644
+Binary files a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint260000.zip and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint260000.zip differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint270000.zip b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint270000.zip
+index 3849f99..506c241 100644
+Binary files a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint270000.zip and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint270000.zip differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint280000.zip b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint280000.zip
+index 94e4cd0..afbbe3c 100644
+Binary files a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint280000.zip and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint280000.zip differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint290000.zip b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint290000.zip
+index 053e4ea..1b552ec 100644
+Binary files a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint290000.zip and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint290000.zip differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint30000.zip b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint30000.zip
+index 2044c56..10ae426 100644
+Binary files a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint30000.zip and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint30000.zip differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint300000.zip b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint300000.zip
+index 81e2c53..2e47851 100644
+Binary files a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint300000.zip and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint300000.zip differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint310000.zip b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint310000.zip
+index a9c5f0a..71d0466 100644
+Binary files a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint310000.zip and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint310000.zip differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint320000.zip b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint320000.zip
+index 73f3172..01821cc 100644
+Binary files a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint320000.zip and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint320000.zip differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint40000.zip b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint40000.zip
+index 4338e92..b712334 100644
+Binary files a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint40000.zip and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint40000.zip differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint50000.zip b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint50000.zip
+index 53f1983..a6eeafb 100644
+Binary files a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint50000.zip and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint50000.zip differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint60000.zip b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint60000.zip
+index 8e656c0..305af7c 100644
+Binary files a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint60000.zip and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint60000.zip differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint70000.zip b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint70000.zip
+index de66cd7..8e09b53 100644
+Binary files a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint70000.zip and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint70000.zip differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint80000.zip b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint80000.zip
+index 14d06ca..3b29c12 100644
+Binary files a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint80000.zip and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint80000.zip differ
+diff --git a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint90000.zip b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint90000.zip
+index f3713f3..7883f6a 100644
+Binary files a/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint90000.zip and b/learnStableBaselines/5_Examples/a2c_cartpole_tensorboard/checkpoint90000.zip differ
+diff --git a/learnStableBaselines/7_wandb/1_wandb.py b/learnStableBaselines/7_wandb/1_wandb.py
+index b9f56de..23b76a7 100644
+--- a/learnStableBaselines/7_wandb/1_wandb.py
++++ b/learnStableBaselines/7_wandb/1_wandb.py
+@@ -14,6 +14,7 @@ config = {
+ }
+ run = wandb.init(
+     project="sb3",
++    dir="/home/gauravb/Documents/LearnProgramming/wandbsavedfiles",
+     config=config,
+     sync_tensorboard=True,  # auto-upload sb3's tensorboard metrics
+     monitor_gym=True,  # auto-upload the videos of agents playing the game
+@@ -32,10 +33,11 @@ env = VecVideoRecorder(env, f"videos/{run.id}", record_video_trigger=lambda x: x
+ model = PPO(config["policy_type"], env, verbose=1, tensorboard_log=f"runs/{run.id}")
+ model.learn(
+     total_timesteps=config["total_timesteps"],
+-    callback=WandbCallback(
++    callback=[WandbCallback(
+         gradient_save_freq=100,
+         model_save_path=f"models/{run.id}",
+         verbose=2,
+-    ),
++
++    ),]
+ )
+-run.finish()
+\ No newline at end of file
++run.finish()
+diff --git a/learnStableBaselines/7_wandb/2_wandb_graph.py b/learnStableBaselines/7_wandb/2_wandb_graph.py
+new file mode 100644
+index 0000000..23b76a7
+--- /dev/null
++++ b/learnStableBaselines/7_wandb/2_wandb_graph.py
+@@ -0,0 +1,43 @@
++import gym
++from stable_baselines3 import PPO
++from stable_baselines3.common.monitor import Monitor
++from stable_baselines3.common.vec_env import DummyVecEnv, VecVideoRecorder
++import wandb
++from wandb.integration.sb3 import WandbCallback
++
++# from customFeatureExtractor import CustomCombinedExtractor
++
++config = {
++    "policy_type": "MlpPolicy",
++    "total_timesteps": 25000,
++    "env_name": "CartPole-v1",
++}
++run = wandb.init(
++    project="sb3",
++    dir="/home/gauravb/Documents/LearnProgramming/wandbsavedfiles",
++    config=config,
++    sync_tensorboard=True,  # auto-upload sb3's tensorboard metrics
++    monitor_gym=True,  # auto-upload the videos of agents playing the game
++    save_code=True,  # optional
++)
++
++
++def make_env():
++    env = gym.make(config["env_name"])
++    env = Monitor(env)  # record stats such as returns
++    return env
++
++
++env = DummyVecEnv([make_env])
++env = VecVideoRecorder(env, f"videos/{run.id}", record_video_trigger=lambda x: x % 2000 == 0, video_length=200)
++model = PPO(config["policy_type"], env, verbose=1, tensorboard_log=f"runs/{run.id}")
++model.learn(
++    total_timesteps=config["total_timesteps"],
++    callback=[WandbCallback(
++        gradient_save_freq=100,
++        model_save_path=f"models/{run.id}",
++        verbose=2,
++
++    ),]
++)
++run.finish()
+diff --git a/learnStableBaselines/7_wandb/models/3j2t0kcg/model.zip b/learnStableBaselines/7_wandb/models/3j2t0kcg/model.zip
+new file mode 100644
+index 0000000..bc5b8f9
+Binary files /dev/null and b/learnStableBaselines/7_wandb/models/3j2t0kcg/model.zip differ
+diff --git a/learnStableBaselines/7_wandb/runs/3j2t0kcg/PPO_1/events.out.tfevents.1650654320.gauravb-ThinkStation-P340.76747.0 b/learnStableBaselines/7_wandb/runs/3j2t0kcg/PPO_1/events.out.tfevents.1650654320.gauravb-ThinkStation-P340.76747.0
+new file mode 100644
+index 0000000..64e6b6f
+Binary files /dev/null and b/learnStableBaselines/7_wandb/runs/3j2t0kcg/PPO_1/events.out.tfevents.1650654320.gauravb-ThinkStation-P340.76747.0 differ
+diff --git a/learnStableBaselines/7_wandb/runs/4nqxfqm9/PPO_1/events.out.tfevents.1650597942.gauravb-ThinkStation-P340.24591.0 b/learnStableBaselines/7_wandb/runs/4nqxfqm9/PPO_1/events.out.tfevents.1650597942.gauravb-ThinkStation-P340.24591.0
+new file mode 100644
+index 0000000..031ce42
+Binary files /dev/null and b/learnStableBaselines/7_wandb/runs/4nqxfqm9/PPO_1/events.out.tfevents.1650597942.gauravb-ThinkStation-P340.24591.0 differ
+diff --git a/learnStableBaselines/7_wandb/runs/oly62s5z/PPO_1/events.out.tfevents.1650597861.gauravb-ThinkStation-P340.23928.0 b/learnStableBaselines/7_wandb/runs/oly62s5z/PPO_1/events.out.tfevents.1650597861.gauravb-ThinkStation-P340.23928.0
+new file mode 100644
+index 0000000..3543c50
+Binary files /dev/null and b/learnStableBaselines/7_wandb/runs/oly62s5z/PPO_1/events.out.tfevents.1650597861.gauravb-ThinkStation-P340.23928.0 differ
+diff --git a/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-0-to-step-200.meta.json b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-0-to-step-200.meta.json
+new file mode 100644
+index 0000000..f40be02
+--- /dev/null
++++ b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-0-to-step-200.meta.json
+@@ -0,0 +1 @@
++{"step_id": 0, "content_type": "video/mp4", "encoder_version": {"backend": "ffmpeg", "version": "b'ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers\\nbuilt with gcc 9 (Ubuntu 9.3.0-10ubuntu2)\\nconfiguration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\\nlibavutil      56. 31.100 / 56. 31.100\\nlibavcodec     58. 54.100 / 58. 54.100\\nlibavformat    58. 29.100 / 58. 29.100\\nlibavdevice    58.  8.100 / 58.  8.100\\nlibavfilter     7. 57.100 /  7. 57.100\\nlibavresample   4.  0.  0 /  4.  0.  0\\nlibswscale      5.  5.100 /  5.  5.100\\nlibswresample   3.  5.100 /  3.  5.100\\nlibpostproc    55.  5.100 / 55.  5.100\\n'", "cmdline": ["ffmpeg", "-nostats", "-loglevel", "error", "-y", "-f", "rawvideo", "-s:v", "600x400", "-pix_fmt", "rgb24", "-framerate", "50", "-i", "-", "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2", "-vcodec", "libx264", "-pix_fmt", "yuv420p", "-r", "50", "/home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-0-to-step-200.mp4"]}}
+\ No newline at end of file
+diff --git a/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-0-to-step-200.mp4 b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-0-to-step-200.mp4
+new file mode 100644
+index 0000000..dbb66cb
+Binary files /dev/null and b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-0-to-step-200.mp4 differ
+diff --git a/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-10000-to-step-10200.meta.json b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-10000-to-step-10200.meta.json
+new file mode 100644
+index 0000000..78f9e86
+--- /dev/null
++++ b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-10000-to-step-10200.meta.json
+@@ -0,0 +1 @@
++{"step_id": 10000, "content_type": "video/mp4", "encoder_version": {"backend": "ffmpeg", "version": "b'ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers\\nbuilt with gcc 9 (Ubuntu 9.3.0-10ubuntu2)\\nconfiguration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\\nlibavutil      56. 31.100 / 56. 31.100\\nlibavcodec     58. 54.100 / 58. 54.100\\nlibavformat    58. 29.100 / 58. 29.100\\nlibavdevice    58.  8.100 / 58.  8.100\\nlibavfilter     7. 57.100 /  7. 57.100\\nlibavresample   4.  0.  0 /  4.  0.  0\\nlibswscale      5.  5.100 /  5.  5.100\\nlibswresample   3.  5.100 /  3.  5.100\\nlibpostproc    55.  5.100 / 55.  5.100\\n'", "cmdline": ["ffmpeg", "-nostats", "-loglevel", "error", "-y", "-f", "rawvideo", "-s:v", "600x400", "-pix_fmt", "rgb24", "-framerate", "50", "-i", "-", "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2", "-vcodec", "libx264", "-pix_fmt", "yuv420p", "-r", "50", "/home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-10000-to-step-10200.mp4"]}}
+\ No newline at end of file
+diff --git a/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-10000-to-step-10200.mp4 b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-10000-to-step-10200.mp4
+new file mode 100644
+index 0000000..2f2dec2
+Binary files /dev/null and b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-10000-to-step-10200.mp4 differ
+diff --git a/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-12000-to-step-12200.meta.json b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-12000-to-step-12200.meta.json
+new file mode 100644
+index 0000000..4a73c4e
+--- /dev/null
++++ b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-12000-to-step-12200.meta.json
+@@ -0,0 +1 @@
++{"step_id": 12000, "content_type": "video/mp4", "encoder_version": {"backend": "ffmpeg", "version": "b'ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers\\nbuilt with gcc 9 (Ubuntu 9.3.0-10ubuntu2)\\nconfiguration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\\nlibavutil      56. 31.100 / 56. 31.100\\nlibavcodec     58. 54.100 / 58. 54.100\\nlibavformat    58. 29.100 / 58. 29.100\\nlibavdevice    58.  8.100 / 58.  8.100\\nlibavfilter     7. 57.100 /  7. 57.100\\nlibavresample   4.  0.  0 /  4.  0.  0\\nlibswscale      5.  5.100 /  5.  5.100\\nlibswresample   3.  5.100 /  3.  5.100\\nlibpostproc    55.  5.100 / 55.  5.100\\n'", "cmdline": ["ffmpeg", "-nostats", "-loglevel", "error", "-y", "-f", "rawvideo", "-s:v", "600x400", "-pix_fmt", "rgb24", "-framerate", "50", "-i", "-", "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2", "-vcodec", "libx264", "-pix_fmt", "yuv420p", "-r", "50", "/home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-12000-to-step-12200.mp4"]}}
+\ No newline at end of file
+diff --git a/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-12000-to-step-12200.mp4 b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-12000-to-step-12200.mp4
+new file mode 100644
+index 0000000..e6f3af7
+Binary files /dev/null and b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-12000-to-step-12200.mp4 differ
+diff --git a/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-14000-to-step-14200.meta.json b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-14000-to-step-14200.meta.json
+new file mode 100644
+index 0000000..c166ee5
+--- /dev/null
++++ b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-14000-to-step-14200.meta.json
+@@ -0,0 +1 @@
++{"step_id": 14000, "content_type": "video/mp4", "encoder_version": {"backend": "ffmpeg", "version": "b'ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers\\nbuilt with gcc 9 (Ubuntu 9.3.0-10ubuntu2)\\nconfiguration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\\nlibavutil      56. 31.100 / 56. 31.100\\nlibavcodec     58. 54.100 / 58. 54.100\\nlibavformat    58. 29.100 / 58. 29.100\\nlibavdevice    58.  8.100 / 58.  8.100\\nlibavfilter     7. 57.100 /  7. 57.100\\nlibavresample   4.  0.  0 /  4.  0.  0\\nlibswscale      5.  5.100 /  5.  5.100\\nlibswresample   3.  5.100 /  3.  5.100\\nlibpostproc    55.  5.100 / 55.  5.100\\n'", "cmdline": ["ffmpeg", "-nostats", "-loglevel", "error", "-y", "-f", "rawvideo", "-s:v", "600x400", "-pix_fmt", "rgb24", "-framerate", "50", "-i", "-", "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2", "-vcodec", "libx264", "-pix_fmt", "yuv420p", "-r", "50", "/home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-14000-to-step-14200.mp4"]}}
+\ No newline at end of file
+diff --git a/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-14000-to-step-14200.mp4 b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-14000-to-step-14200.mp4
+new file mode 100644
+index 0000000..2c4f030
+Binary files /dev/null and b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-14000-to-step-14200.mp4 differ
+diff --git a/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-16000-to-step-16200.meta.json b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-16000-to-step-16200.meta.json
+new file mode 100644
+index 0000000..2b85df6
+--- /dev/null
++++ b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-16000-to-step-16200.meta.json
+@@ -0,0 +1 @@
++{"step_id": 16000, "content_type": "video/mp4", "encoder_version": {"backend": "ffmpeg", "version": "b'ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers\\nbuilt with gcc 9 (Ubuntu 9.3.0-10ubuntu2)\\nconfiguration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\\nlibavutil      56. 31.100 / 56. 31.100\\nlibavcodec     58. 54.100 / 58. 54.100\\nlibavformat    58. 29.100 / 58. 29.100\\nlibavdevice    58.  8.100 / 58.  8.100\\nlibavfilter     7. 57.100 /  7. 57.100\\nlibavresample   4.  0.  0 /  4.  0.  0\\nlibswscale      5.  5.100 /  5.  5.100\\nlibswresample   3.  5.100 /  3.  5.100\\nlibpostproc    55.  5.100 / 55.  5.100\\n'", "cmdline": ["ffmpeg", "-nostats", "-loglevel", "error", "-y", "-f", "rawvideo", "-s:v", "600x400", "-pix_fmt", "rgb24", "-framerate", "50", "-i", "-", "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2", "-vcodec", "libx264", "-pix_fmt", "yuv420p", "-r", "50", "/home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-16000-to-step-16200.mp4"]}}
+\ No newline at end of file
+diff --git a/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-16000-to-step-16200.mp4 b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-16000-to-step-16200.mp4
+new file mode 100644
+index 0000000..dc8d740
+Binary files /dev/null and b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-16000-to-step-16200.mp4 differ
+diff --git a/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-18000-to-step-18200.meta.json b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-18000-to-step-18200.meta.json
+new file mode 100644
+index 0000000..6f5672b
+--- /dev/null
++++ b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-18000-to-step-18200.meta.json
+@@ -0,0 +1 @@
++{"step_id": 18000, "content_type": "video/mp4", "encoder_version": {"backend": "ffmpeg", "version": "b'ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers\\nbuilt with gcc 9 (Ubuntu 9.3.0-10ubuntu2)\\nconfiguration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\\nlibavutil      56. 31.100 / 56. 31.100\\nlibavcodec     58. 54.100 / 58. 54.100\\nlibavformat    58. 29.100 / 58. 29.100\\nlibavdevice    58.  8.100 / 58.  8.100\\nlibavfilter     7. 57.100 /  7. 57.100\\nlibavresample   4.  0.  0 /  4.  0.  0\\nlibswscale      5.  5.100 /  5.  5.100\\nlibswresample   3.  5.100 /  3.  5.100\\nlibpostproc    55.  5.100 / 55.  5.100\\n'", "cmdline": ["ffmpeg", "-nostats", "-loglevel", "error", "-y", "-f", "rawvideo", "-s:v", "600x400", "-pix_fmt", "rgb24", "-framerate", "50", "-i", "-", "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2", "-vcodec", "libx264", "-pix_fmt", "yuv420p", "-r", "50", "/home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-18000-to-step-18200.mp4"]}}
+\ No newline at end of file
+diff --git a/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-18000-to-step-18200.mp4 b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-18000-to-step-18200.mp4
+new file mode 100644
+index 0000000..afdfa50
+Binary files /dev/null and b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-18000-to-step-18200.mp4 differ
+diff --git a/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-2000-to-step-2200.meta.json b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-2000-to-step-2200.meta.json
+new file mode 100644
+index 0000000..b64ac6e
+--- /dev/null
++++ b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-2000-to-step-2200.meta.json
+@@ -0,0 +1 @@
++{"step_id": 2000, "content_type": "video/mp4", "encoder_version": {"backend": "ffmpeg", "version": "b'ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers\\nbuilt with gcc 9 (Ubuntu 9.3.0-10ubuntu2)\\nconfiguration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\\nlibavutil      56. 31.100 / 56. 31.100\\nlibavcodec     58. 54.100 / 58. 54.100\\nlibavformat    58. 29.100 / 58. 29.100\\nlibavdevice    58.  8.100 / 58.  8.100\\nlibavfilter     7. 57.100 /  7. 57.100\\nlibavresample   4.  0.  0 /  4.  0.  0\\nlibswscale      5.  5.100 /  5.  5.100\\nlibswresample   3.  5.100 /  3.  5.100\\nlibpostproc    55.  5.100 / 55.  5.100\\n'", "cmdline": ["ffmpeg", "-nostats", "-loglevel", "error", "-y", "-f", "rawvideo", "-s:v", "600x400", "-pix_fmt", "rgb24", "-framerate", "50", "-i", "-", "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2", "-vcodec", "libx264", "-pix_fmt", "yuv420p", "-r", "50", "/home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-2000-to-step-2200.mp4"]}}
+\ No newline at end of file
+diff --git a/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-2000-to-step-2200.mp4 b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-2000-to-step-2200.mp4
+new file mode 100644
+index 0000000..370b107
+Binary files /dev/null and b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-2000-to-step-2200.mp4 differ
+diff --git a/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-20000-to-step-20200.meta.json b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-20000-to-step-20200.meta.json
+new file mode 100644
+index 0000000..1b2dd59
+--- /dev/null
++++ b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-20000-to-step-20200.meta.json
+@@ -0,0 +1 @@
++{"step_id": 20000, "content_type": "video/mp4", "encoder_version": {"backend": "ffmpeg", "version": "b'ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers\\nbuilt with gcc 9 (Ubuntu 9.3.0-10ubuntu2)\\nconfiguration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\\nlibavutil      56. 31.100 / 56. 31.100\\nlibavcodec     58. 54.100 / 58. 54.100\\nlibavformat    58. 29.100 / 58. 29.100\\nlibavdevice    58.  8.100 / 58.  8.100\\nlibavfilter     7. 57.100 /  7. 57.100\\nlibavresample   4.  0.  0 /  4.  0.  0\\nlibswscale      5.  5.100 /  5.  5.100\\nlibswresample   3.  5.100 /  3.  5.100\\nlibpostproc    55.  5.100 / 55.  5.100\\n'", "cmdline": ["ffmpeg", "-nostats", "-loglevel", "error", "-y", "-f", "rawvideo", "-s:v", "600x400", "-pix_fmt", "rgb24", "-framerate", "50", "-i", "-", "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2", "-vcodec", "libx264", "-pix_fmt", "yuv420p", "-r", "50", "/home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-20000-to-step-20200.mp4"]}}
+\ No newline at end of file
+diff --git a/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-20000-to-step-20200.mp4 b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-20000-to-step-20200.mp4
+new file mode 100644
+index 0000000..11355c7
+Binary files /dev/null and b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-20000-to-step-20200.mp4 differ
+diff --git a/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-22000-to-step-22200.meta.json b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-22000-to-step-22200.meta.json
+new file mode 100644
+index 0000000..39ec226
+--- /dev/null
++++ b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-22000-to-step-22200.meta.json
+@@ -0,0 +1 @@
++{"step_id": 22000, "content_type": "video/mp4", "encoder_version": {"backend": "ffmpeg", "version": "b'ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers\\nbuilt with gcc 9 (Ubuntu 9.3.0-10ubuntu2)\\nconfiguration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\\nlibavutil      56. 31.100 / 56. 31.100\\nlibavcodec     58. 54.100 / 58. 54.100\\nlibavformat    58. 29.100 / 58. 29.100\\nlibavdevice    58.  8.100 / 58.  8.100\\nlibavfilter     7. 57.100 /  7. 57.100\\nlibavresample   4.  0.  0 /  4.  0.  0\\nlibswscale      5.  5.100 /  5.  5.100\\nlibswresample   3.  5.100 /  3.  5.100\\nlibpostproc    55.  5.100 / 55.  5.100\\n'", "cmdline": ["ffmpeg", "-nostats", "-loglevel", "error", "-y", "-f", "rawvideo", "-s:v", "600x400", "-pix_fmt", "rgb24", "-framerate", "50", "-i", "-", "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2", "-vcodec", "libx264", "-pix_fmt", "yuv420p", "-r", "50", "/home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-22000-to-step-22200.mp4"]}}
+\ No newline at end of file
+diff --git a/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-22000-to-step-22200.mp4 b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-22000-to-step-22200.mp4
+new file mode 100644
+index 0000000..26ccbe5
+Binary files /dev/null and b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-22000-to-step-22200.mp4 differ
+diff --git a/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-24000-to-step-24200.meta.json b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-24000-to-step-24200.meta.json
+new file mode 100644
+index 0000000..8d0a21a
+--- /dev/null
++++ b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-24000-to-step-24200.meta.json
+@@ -0,0 +1 @@
++{"step_id": 24000, "content_type": "video/mp4", "encoder_version": {"backend": "ffmpeg", "version": "b'ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers\\nbuilt with gcc 9 (Ubuntu 9.3.0-10ubuntu2)\\nconfiguration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\\nlibavutil      56. 31.100 / 56. 31.100\\nlibavcodec     58. 54.100 / 58. 54.100\\nlibavformat    58. 29.100 / 58. 29.100\\nlibavdevice    58.  8.100 / 58.  8.100\\nlibavfilter     7. 57.100 /  7. 57.100\\nlibavresample   4.  0.  0 /  4.  0.  0\\nlibswscale      5.  5.100 /  5.  5.100\\nlibswresample   3.  5.100 /  3.  5.100\\nlibpostproc    55.  5.100 / 55.  5.100\\n'", "cmdline": ["ffmpeg", "-nostats", "-loglevel", "error", "-y", "-f", "rawvideo", "-s:v", "600x400", "-pix_fmt", "rgb24", "-framerate", "50", "-i", "-", "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2", "-vcodec", "libx264", "-pix_fmt", "yuv420p", "-r", "50", "/home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-24000-to-step-24200.mp4"]}}
+\ No newline at end of file
+diff --git a/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-24000-to-step-24200.mp4 b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-24000-to-step-24200.mp4
+new file mode 100644
+index 0000000..35917e7
+Binary files /dev/null and b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-24000-to-step-24200.mp4 differ
+diff --git a/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-26000-to-step-26200.meta.json b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-26000-to-step-26200.meta.json
+new file mode 100644
+index 0000000..b7eed44
+--- /dev/null
++++ b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-26000-to-step-26200.meta.json
+@@ -0,0 +1 @@
++{"step_id": 26000, "content_type": "video/mp4", "encoder_version": {"backend": "ffmpeg", "version": "b'ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers\\nbuilt with gcc 9 (Ubuntu 9.3.0-10ubuntu2)\\nconfiguration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\\nlibavutil      56. 31.100 / 56. 31.100\\nlibavcodec     58. 54.100 / 58. 54.100\\nlibavformat    58. 29.100 / 58. 29.100\\nlibavdevice    58.  8.100 / 58.  8.100\\nlibavfilter     7. 57.100 /  7. 57.100\\nlibavresample   4.  0.  0 /  4.  0.  0\\nlibswscale      5.  5.100 /  5.  5.100\\nlibswresample   3.  5.100 /  3.  5.100\\nlibpostproc    55.  5.100 / 55.  5.100\\n'", "cmdline": ["ffmpeg", "-nostats", "-loglevel", "error", "-y", "-f", "rawvideo", "-s:v", "600x400", "-pix_fmt", "rgb24", "-framerate", "50", "-i", "-", "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2", "-vcodec", "libx264", "-pix_fmt", "yuv420p", "-r", "50", "/home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-26000-to-step-26200.mp4"]}}
+\ No newline at end of file
+diff --git a/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-26000-to-step-26200.mp4 b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-26000-to-step-26200.mp4
+new file mode 100644
+index 0000000..b44913b
+Binary files /dev/null and b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-26000-to-step-26200.mp4 differ
+diff --git a/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-4000-to-step-4200.meta.json b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-4000-to-step-4200.meta.json
+new file mode 100644
+index 0000000..43bd6c2
+--- /dev/null
++++ b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-4000-to-step-4200.meta.json
+@@ -0,0 +1 @@
++{"step_id": 4000, "content_type": "video/mp4", "encoder_version": {"backend": "ffmpeg", "version": "b'ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers\\nbuilt with gcc 9 (Ubuntu 9.3.0-10ubuntu2)\\nconfiguration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\\nlibavutil      56. 31.100 / 56. 31.100\\nlibavcodec     58. 54.100 / 58. 54.100\\nlibavformat    58. 29.100 / 58. 29.100\\nlibavdevice    58.  8.100 / 58.  8.100\\nlibavfilter     7. 57.100 /  7. 57.100\\nlibavresample   4.  0.  0 /  4.  0.  0\\nlibswscale      5.  5.100 /  5.  5.100\\nlibswresample   3.  5.100 /  3.  5.100\\nlibpostproc    55.  5.100 / 55.  5.100\\n'", "cmdline": ["ffmpeg", "-nostats", "-loglevel", "error", "-y", "-f", "rawvideo", "-s:v", "600x400", "-pix_fmt", "rgb24", "-framerate", "50", "-i", "-", "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2", "-vcodec", "libx264", "-pix_fmt", "yuv420p", "-r", "50", "/home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-4000-to-step-4200.mp4"]}}
+\ No newline at end of file
+diff --git a/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-4000-to-step-4200.mp4 b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-4000-to-step-4200.mp4
+new file mode 100644
+index 0000000..e655487
+Binary files /dev/null and b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-4000-to-step-4200.mp4 differ
+diff --git a/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-6000-to-step-6200.meta.json b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-6000-to-step-6200.meta.json
+new file mode 100644
+index 0000000..c78175b
+--- /dev/null
++++ b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-6000-to-step-6200.meta.json
+@@ -0,0 +1 @@
++{"step_id": 6000, "content_type": "video/mp4", "encoder_version": {"backend": "ffmpeg", "version": "b'ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers\\nbuilt with gcc 9 (Ubuntu 9.3.0-10ubuntu2)\\nconfiguration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\\nlibavutil      56. 31.100 / 56. 31.100\\nlibavcodec     58. 54.100 / 58. 54.100\\nlibavformat    58. 29.100 / 58. 29.100\\nlibavdevice    58.  8.100 / 58.  8.100\\nlibavfilter     7. 57.100 /  7. 57.100\\nlibavresample   4.  0.  0 /  4.  0.  0\\nlibswscale      5.  5.100 /  5.  5.100\\nlibswresample   3.  5.100 /  3.  5.100\\nlibpostproc    55.  5.100 / 55.  5.100\\n'", "cmdline": ["ffmpeg", "-nostats", "-loglevel", "error", "-y", "-f", "rawvideo", "-s:v", "600x400", "-pix_fmt", "rgb24", "-framerate", "50", "-i", "-", "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2", "-vcodec", "libx264", "-pix_fmt", "yuv420p", "-r", "50", "/home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-6000-to-step-6200.mp4"]}}
+\ No newline at end of file
+diff --git a/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-6000-to-step-6200.mp4 b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-6000-to-step-6200.mp4
+new file mode 100644
+index 0000000..5f32247
+Binary files /dev/null and b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-6000-to-step-6200.mp4 differ
+diff --git a/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-8000-to-step-8200.meta.json b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-8000-to-step-8200.meta.json
+new file mode 100644
+index 0000000..e016e53
+--- /dev/null
++++ b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-8000-to-step-8200.meta.json
+@@ -0,0 +1 @@
++{"step_id": 8000, "content_type": "video/mp4", "encoder_version": {"backend": "ffmpeg", "version": "b'ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers\\nbuilt with gcc 9 (Ubuntu 9.3.0-10ubuntu2)\\nconfiguration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\\nlibavutil      56. 31.100 / 56. 31.100\\nlibavcodec     58. 54.100 / 58. 54.100\\nlibavformat    58. 29.100 / 58. 29.100\\nlibavdevice    58.  8.100 / 58.  8.100\\nlibavfilter     7. 57.100 /  7. 57.100\\nlibavresample   4.  0.  0 /  4.  0.  0\\nlibswscale      5.  5.100 /  5.  5.100\\nlibswresample   3.  5.100 /  3.  5.100\\nlibpostproc    55.  5.100 / 55.  5.100\\n'", "cmdline": ["ffmpeg", "-nostats", "-loglevel", "error", "-y", "-f", "rawvideo", "-s:v", "600x400", "-pix_fmt", "rgb24", "-framerate", "50", "-i", "-", "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2", "-vcodec", "libx264", "-pix_fmt", "yuv420p", "-r", "50", "/home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-8000-to-step-8200.mp4"]}}
+\ No newline at end of file
+diff --git a/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-8000-to-step-8200.mp4 b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-8000-to-step-8200.mp4
+new file mode 100644
+index 0000000..a78d741
+Binary files /dev/null and b/learnStableBaselines/7_wandb/videos/3j2t0kcg/rl-video-step-8000-to-step-8200.mp4 differ
+diff --git a/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-0-to-step-200.meta.json b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-0-to-step-200.meta.json
+new file mode 100644
+index 0000000..b11d8db
+--- /dev/null
++++ b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-0-to-step-200.meta.json
+@@ -0,0 +1 @@
++{"step_id": 0, "content_type": "video/mp4", "encoder_version": {"backend": "ffmpeg", "version": "b'ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers\\nbuilt with gcc 9 (Ubuntu 9.3.0-10ubuntu2)\\nconfiguration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\\nlibavutil      56. 31.100 / 56. 31.100\\nlibavcodec     58. 54.100 / 58. 54.100\\nlibavformat    58. 29.100 / 58. 29.100\\nlibavdevice    58.  8.100 / 58.  8.100\\nlibavfilter     7. 57.100 /  7. 57.100\\nlibavresample   4.  0.  0 /  4.  0.  0\\nlibswscale      5.  5.100 /  5.  5.100\\nlibswresample   3.  5.100 /  3.  5.100\\nlibpostproc    55.  5.100 / 55.  5.100\\n'", "cmdline": ["ffmpeg", "-nostats", "-loglevel", "error", "-y", "-f", "rawvideo", "-s:v", "600x400", "-pix_fmt", "rgb24", "-framerate", "50", "-i", "-", "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2", "-vcodec", "libx264", "-pix_fmt", "yuv420p", "-r", "50", "/home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-0-to-step-200.mp4"]}}
+\ No newline at end of file
+diff --git a/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-0-to-step-200.mp4 b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-0-to-step-200.mp4
+new file mode 100644
+index 0000000..b3568da
+Binary files /dev/null and b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-0-to-step-200.mp4 differ
+diff --git a/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-10000-to-step-10200.meta.json b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-10000-to-step-10200.meta.json
+new file mode 100644
+index 0000000..76cb0b1
+--- /dev/null
++++ b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-10000-to-step-10200.meta.json
+@@ -0,0 +1 @@
++{"step_id": 10000, "content_type": "video/mp4", "encoder_version": {"backend": "ffmpeg", "version": "b'ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers\\nbuilt with gcc 9 (Ubuntu 9.3.0-10ubuntu2)\\nconfiguration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\\nlibavutil      56. 31.100 / 56. 31.100\\nlibavcodec     58. 54.100 / 58. 54.100\\nlibavformat    58. 29.100 / 58. 29.100\\nlibavdevice    58.  8.100 / 58.  8.100\\nlibavfilter     7. 57.100 /  7. 57.100\\nlibavresample   4.  0.  0 /  4.  0.  0\\nlibswscale      5.  5.100 /  5.  5.100\\nlibswresample   3.  5.100 /  3.  5.100\\nlibpostproc    55.  5.100 / 55.  5.100\\n'", "cmdline": ["ffmpeg", "-nostats", "-loglevel", "error", "-y", "-f", "rawvideo", "-s:v", "600x400", "-pix_fmt", "rgb24", "-framerate", "50", "-i", "-", "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2", "-vcodec", "libx264", "-pix_fmt", "yuv420p", "-r", "50", "/home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-10000-to-step-10200.mp4"]}}
+\ No newline at end of file
+diff --git a/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-10000-to-step-10200.mp4 b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-10000-to-step-10200.mp4
+new file mode 100644
+index 0000000..a0a8c47
+Binary files /dev/null and b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-10000-to-step-10200.mp4 differ
+diff --git a/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-12000-to-step-12200.meta.json b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-12000-to-step-12200.meta.json
+new file mode 100644
+index 0000000..40e8d84
+--- /dev/null
++++ b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-12000-to-step-12200.meta.json
+@@ -0,0 +1 @@
++{"step_id": 12000, "content_type": "video/mp4", "encoder_version": {"backend": "ffmpeg", "version": "b'ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers\\nbuilt with gcc 9 (Ubuntu 9.3.0-10ubuntu2)\\nconfiguration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\\nlibavutil      56. 31.100 / 56. 31.100\\nlibavcodec     58. 54.100 / 58. 54.100\\nlibavformat    58. 29.100 / 58. 29.100\\nlibavdevice    58.  8.100 / 58.  8.100\\nlibavfilter     7. 57.100 /  7. 57.100\\nlibavresample   4.  0.  0 /  4.  0.  0\\nlibswscale      5.  5.100 /  5.  5.100\\nlibswresample   3.  5.100 /  3.  5.100\\nlibpostproc    55.  5.100 / 55.  5.100\\n'", "cmdline": ["ffmpeg", "-nostats", "-loglevel", "error", "-y", "-f", "rawvideo", "-s:v", "600x400", "-pix_fmt", "rgb24", "-framerate", "50", "-i", "-", "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2", "-vcodec", "libx264", "-pix_fmt", "yuv420p", "-r", "50", "/home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-12000-to-step-12200.mp4"]}}
+\ No newline at end of file
+diff --git a/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-12000-to-step-12200.mp4 b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-12000-to-step-12200.mp4
+new file mode 100644
+index 0000000..ced0c0d
+Binary files /dev/null and b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-12000-to-step-12200.mp4 differ
+diff --git a/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-14000-to-step-14200.meta.json b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-14000-to-step-14200.meta.json
+new file mode 100644
+index 0000000..5b8a1cb
+--- /dev/null
++++ b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-14000-to-step-14200.meta.json
+@@ -0,0 +1 @@
++{"step_id": 14000, "content_type": "video/mp4", "encoder_version": {"backend": "ffmpeg", "version": "b'ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers\\nbuilt with gcc 9 (Ubuntu 9.3.0-10ubuntu2)\\nconfiguration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\\nlibavutil      56. 31.100 / 56. 31.100\\nlibavcodec     58. 54.100 / 58. 54.100\\nlibavformat    58. 29.100 / 58. 29.100\\nlibavdevice    58.  8.100 / 58.  8.100\\nlibavfilter     7. 57.100 /  7. 57.100\\nlibavresample   4.  0.  0 /  4.  0.  0\\nlibswscale      5.  5.100 /  5.  5.100\\nlibswresample   3.  5.100 /  3.  5.100\\nlibpostproc    55.  5.100 / 55.  5.100\\n'", "cmdline": ["ffmpeg", "-nostats", "-loglevel", "error", "-y", "-f", "rawvideo", "-s:v", "600x400", "-pix_fmt", "rgb24", "-framerate", "50", "-i", "-", "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2", "-vcodec", "libx264", "-pix_fmt", "yuv420p", "-r", "50", "/home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-14000-to-step-14200.mp4"]}}
+\ No newline at end of file
+diff --git a/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-14000-to-step-14200.mp4 b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-14000-to-step-14200.mp4
+new file mode 100644
+index 0000000..df91a48
+Binary files /dev/null and b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-14000-to-step-14200.mp4 differ
+diff --git a/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-16000-to-step-16200.meta.json b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-16000-to-step-16200.meta.json
+new file mode 100644
+index 0000000..4b55ce0
+--- /dev/null
++++ b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-16000-to-step-16200.meta.json
+@@ -0,0 +1 @@
++{"step_id": 16000, "content_type": "video/mp4", "encoder_version": {"backend": "ffmpeg", "version": "b'ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers\\nbuilt with gcc 9 (Ubuntu 9.3.0-10ubuntu2)\\nconfiguration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\\nlibavutil      56. 31.100 / 56. 31.100\\nlibavcodec     58. 54.100 / 58. 54.100\\nlibavformat    58. 29.100 / 58. 29.100\\nlibavdevice    58.  8.100 / 58.  8.100\\nlibavfilter     7. 57.100 /  7. 57.100\\nlibavresample   4.  0.  0 /  4.  0.  0\\nlibswscale      5.  5.100 /  5.  5.100\\nlibswresample   3.  5.100 /  3.  5.100\\nlibpostproc    55.  5.100 / 55.  5.100\\n'", "cmdline": ["ffmpeg", "-nostats", "-loglevel", "error", "-y", "-f", "rawvideo", "-s:v", "600x400", "-pix_fmt", "rgb24", "-framerate", "50", "-i", "-", "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2", "-vcodec", "libx264", "-pix_fmt", "yuv420p", "-r", "50", "/home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-16000-to-step-16200.mp4"]}}
+\ No newline at end of file
+diff --git a/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-16000-to-step-16200.mp4 b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-16000-to-step-16200.mp4
+new file mode 100644
+index 0000000..efcf9d7
+Binary files /dev/null and b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-16000-to-step-16200.mp4 differ
+diff --git a/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-2000-to-step-2200.meta.json b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-2000-to-step-2200.meta.json
+new file mode 100644
+index 0000000..21c9673
+--- /dev/null
++++ b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-2000-to-step-2200.meta.json
+@@ -0,0 +1 @@
++{"step_id": 2000, "content_type": "video/mp4", "encoder_version": {"backend": "ffmpeg", "version": "b'ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers\\nbuilt with gcc 9 (Ubuntu 9.3.0-10ubuntu2)\\nconfiguration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\\nlibavutil      56. 31.100 / 56. 31.100\\nlibavcodec     58. 54.100 / 58. 54.100\\nlibavformat    58. 29.100 / 58. 29.100\\nlibavdevice    58.  8.100 / 58.  8.100\\nlibavfilter     7. 57.100 /  7. 57.100\\nlibavresample   4.  0.  0 /  4.  0.  0\\nlibswscale      5.  5.100 /  5.  5.100\\nlibswresample   3.  5.100 /  3.  5.100\\nlibpostproc    55.  5.100 / 55.  5.100\\n'", "cmdline": ["ffmpeg", "-nostats", "-loglevel", "error", "-y", "-f", "rawvideo", "-s:v", "600x400", "-pix_fmt", "rgb24", "-framerate", "50", "-i", "-", "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2", "-vcodec", "libx264", "-pix_fmt", "yuv420p", "-r", "50", "/home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-2000-to-step-2200.mp4"]}}
+\ No newline at end of file
+diff --git a/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-2000-to-step-2200.mp4 b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-2000-to-step-2200.mp4
+new file mode 100644
+index 0000000..9053b76
+Binary files /dev/null and b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-2000-to-step-2200.mp4 differ
+diff --git a/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-4000-to-step-4200.meta.json b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-4000-to-step-4200.meta.json
+new file mode 100644
+index 0000000..9b1cba1
+--- /dev/null
++++ b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-4000-to-step-4200.meta.json
+@@ -0,0 +1 @@
++{"step_id": 4000, "content_type": "video/mp4", "encoder_version": {"backend": "ffmpeg", "version": "b'ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers\\nbuilt with gcc 9 (Ubuntu 9.3.0-10ubuntu2)\\nconfiguration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\\nlibavutil      56. 31.100 / 56. 31.100\\nlibavcodec     58. 54.100 / 58. 54.100\\nlibavformat    58. 29.100 / 58. 29.100\\nlibavdevice    58.  8.100 / 58.  8.100\\nlibavfilter     7. 57.100 /  7. 57.100\\nlibavresample   4.  0.  0 /  4.  0.  0\\nlibswscale      5.  5.100 /  5.  5.100\\nlibswresample   3.  5.100 /  3.  5.100\\nlibpostproc    55.  5.100 / 55.  5.100\\n'", "cmdline": ["ffmpeg", "-nostats", "-loglevel", "error", "-y", "-f", "rawvideo", "-s:v", "600x400", "-pix_fmt", "rgb24", "-framerate", "50", "-i", "-", "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2", "-vcodec", "libx264", "-pix_fmt", "yuv420p", "-r", "50", "/home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-4000-to-step-4200.mp4"]}}
+\ No newline at end of file
+diff --git a/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-4000-to-step-4200.mp4 b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-4000-to-step-4200.mp4
+new file mode 100644
+index 0000000..b373604
+Binary files /dev/null and b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-4000-to-step-4200.mp4 differ
+diff --git a/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-6000-to-step-6200.meta.json b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-6000-to-step-6200.meta.json
+new file mode 100644
+index 0000000..4b96c53
+--- /dev/null
++++ b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-6000-to-step-6200.meta.json
+@@ -0,0 +1 @@
++{"step_id": 6000, "content_type": "video/mp4", "encoder_version": {"backend": "ffmpeg", "version": "b'ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers\\nbuilt with gcc 9 (Ubuntu 9.3.0-10ubuntu2)\\nconfiguration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\\nlibavutil      56. 31.100 / 56. 31.100\\nlibavcodec     58. 54.100 / 58. 54.100\\nlibavformat    58. 29.100 / 58. 29.100\\nlibavdevice    58.  8.100 / 58.  8.100\\nlibavfilter     7. 57.100 /  7. 57.100\\nlibavresample   4.  0.  0 /  4.  0.  0\\nlibswscale      5.  5.100 /  5.  5.100\\nlibswresample   3.  5.100 /  3.  5.100\\nlibpostproc    55.  5.100 / 55.  5.100\\n'", "cmdline": ["ffmpeg", "-nostats", "-loglevel", "error", "-y", "-f", "rawvideo", "-s:v", "600x400", "-pix_fmt", "rgb24", "-framerate", "50", "-i", "-", "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2", "-vcodec", "libx264", "-pix_fmt", "yuv420p", "-r", "50", "/home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-6000-to-step-6200.mp4"]}}
+\ No newline at end of file
+diff --git a/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-6000-to-step-6200.mp4 b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-6000-to-step-6200.mp4
+new file mode 100644
+index 0000000..175077f
+Binary files /dev/null and b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-6000-to-step-6200.mp4 differ
+diff --git a/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-8000-to-step-8200.meta.json b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-8000-to-step-8200.meta.json
+new file mode 100644
+index 0000000..c5a9328
+--- /dev/null
++++ b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-8000-to-step-8200.meta.json
+@@ -0,0 +1 @@
++{"step_id": 8000, "content_type": "video/mp4", "encoder_version": {"backend": "ffmpeg", "version": "b'ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers\\nbuilt with gcc 9 (Ubuntu 9.3.0-10ubuntu2)\\nconfiguration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\\nlibavutil      56. 31.100 / 56. 31.100\\nlibavcodec     58. 54.100 / 58. 54.100\\nlibavformat    58. 29.100 / 58. 29.100\\nlibavdevice    58.  8.100 / 58.  8.100\\nlibavfilter     7. 57.100 /  7. 57.100\\nlibavresample   4.  0.  0 /  4.  0.  0\\nlibswscale      5.  5.100 /  5.  5.100\\nlibswresample   3.  5.100 /  3.  5.100\\nlibpostproc    55.  5.100 / 55.  5.100\\n'", "cmdline": ["ffmpeg", "-nostats", "-loglevel", "error", "-y", "-f", "rawvideo", "-s:v", "600x400", "-pix_fmt", "rgb24", "-framerate", "50", "-i", "-", "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2", "-vcodec", "libx264", "-pix_fmt", "yuv420p", "-r", "50", "/home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-8000-to-step-8200.mp4"]}}
+\ No newline at end of file
+diff --git a/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-8000-to-step-8200.mp4 b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-8000-to-step-8200.mp4
+new file mode 100644
+index 0000000..6eefd15
+Binary files /dev/null and b/learnStableBaselines/7_wandb/videos/4nqxfqm9/rl-video-step-8000-to-step-8200.mp4 differ
+diff --git a/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-0-to-step-200.meta.json b/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-0-to-step-200.meta.json
+new file mode 100644
+index 0000000..5630313
+--- /dev/null
++++ b/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-0-to-step-200.meta.json
+@@ -0,0 +1 @@
++{"step_id": 0, "content_type": "video/mp4", "encoder_version": {"backend": "ffmpeg", "version": "b'ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers\\nbuilt with gcc 9 (Ubuntu 9.3.0-10ubuntu2)\\nconfiguration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\\nlibavutil      56. 31.100 / 56. 31.100\\nlibavcodec     58. 54.100 / 58. 54.100\\nlibavformat    58. 29.100 / 58. 29.100\\nlibavdevice    58.  8.100 / 58.  8.100\\nlibavfilter     7. 57.100 /  7. 57.100\\nlibavresample   4.  0.  0 /  4.  0.  0\\nlibswscale      5.  5.100 /  5.  5.100\\nlibswresample   3.  5.100 /  3.  5.100\\nlibpostproc    55.  5.100 / 55.  5.100\\n'", "cmdline": ["ffmpeg", "-nostats", "-loglevel", "error", "-y", "-f", "rawvideo", "-s:v", "600x400", "-pix_fmt", "rgb24", "-framerate", "50", "-i", "-", "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2", "-vcodec", "libx264", "-pix_fmt", "yuv420p", "-r", "50", "/home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-0-to-step-200.mp4"]}}
+\ No newline at end of file
+diff --git a/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-0-to-step-200.mp4 b/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-0-to-step-200.mp4
+new file mode 100644
+index 0000000..a2cc972
+Binary files /dev/null and b/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-0-to-step-200.mp4 differ
+diff --git a/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-10000-to-step-10200.meta.json b/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-10000-to-step-10200.meta.json
+new file mode 100644
+index 0000000..ecee3d4
+--- /dev/null
++++ b/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-10000-to-step-10200.meta.json
+@@ -0,0 +1 @@
++{"step_id": 10000, "content_type": "video/mp4", "encoder_version": {"backend": "ffmpeg", "version": "b'ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers\\nbuilt with gcc 9 (Ubuntu 9.3.0-10ubuntu2)\\nconfiguration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\\nlibavutil      56. 31.100 / 56. 31.100\\nlibavcodec     58. 54.100 / 58. 54.100\\nlibavformat    58. 29.100 / 58. 29.100\\nlibavdevice    58.  8.100 / 58.  8.100\\nlibavfilter     7. 57.100 /  7. 57.100\\nlibavresample   4.  0.  0 /  4.  0.  0\\nlibswscale      5.  5.100 /  5.  5.100\\nlibswresample   3.  5.100 /  3.  5.100\\nlibpostproc    55.  5.100 / 55.  5.100\\n'", "cmdline": ["ffmpeg", "-nostats", "-loglevel", "error", "-y", "-f", "rawvideo", "-s:v", "600x400", "-pix_fmt", "rgb24", "-framerate", "50", "-i", "-", "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2", "-vcodec", "libx264", "-pix_fmt", "yuv420p", "-r", "50", "/home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-10000-to-step-10200.mp4"]}}
+\ No newline at end of file
+diff --git a/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-10000-to-step-10200.mp4 b/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-10000-to-step-10200.mp4
+new file mode 100644
+index 0000000..ea97ee1
+Binary files /dev/null and b/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-10000-to-step-10200.mp4 differ
+diff --git a/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-12000-to-step-12200.meta.json b/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-12000-to-step-12200.meta.json
+new file mode 100644
+index 0000000..1f2833d
+--- /dev/null
++++ b/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-12000-to-step-12200.meta.json
+@@ -0,0 +1 @@
++{"step_id": 12000, "content_type": "video/mp4", "encoder_version": {"backend": "ffmpeg", "version": "b'ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers\\nbuilt with gcc 9 (Ubuntu 9.3.0-10ubuntu2)\\nconfiguration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\\nlibavutil      56. 31.100 / 56. 31.100\\nlibavcodec     58. 54.100 / 58. 54.100\\nlibavformat    58. 29.100 / 58. 29.100\\nlibavdevice    58.  8.100 / 58.  8.100\\nlibavfilter     7. 57.100 /  7. 57.100\\nlibavresample   4.  0.  0 /  4.  0.  0\\nlibswscale      5.  5.100 /  5.  5.100\\nlibswresample   3.  5.100 /  3.  5.100\\nlibpostproc    55.  5.100 / 55.  5.100\\n'", "cmdline": ["ffmpeg", "-nostats", "-loglevel", "error", "-y", "-f", "rawvideo", "-s:v", "600x400", "-pix_fmt", "rgb24", "-framerate", "50", "-i", "-", "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2", "-vcodec", "libx264", "-pix_fmt", "yuv420p", "-r", "50", "/home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-12000-to-step-12200.mp4"]}}
+\ No newline at end of file
+diff --git a/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-12000-to-step-12200.mp4 b/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-12000-to-step-12200.mp4
+new file mode 100644
+index 0000000..31eeeb5
+Binary files /dev/null and b/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-12000-to-step-12200.mp4 differ
+diff --git a/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-14000-to-step-14200.meta.json b/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-14000-to-step-14200.meta.json
+new file mode 100644
+index 0000000..da58ae8
+--- /dev/null
++++ b/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-14000-to-step-14200.meta.json
+@@ -0,0 +1 @@
++{"step_id": 14000, "content_type": "video/mp4"}
+\ No newline at end of file
+diff --git a/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-14000-to-step-14200.mp4 b/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-14000-to-step-14200.mp4
+new file mode 100644
+index 0000000..1d1a203
+Binary files /dev/null and b/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-14000-to-step-14200.mp4 differ
+diff --git a/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-2000-to-step-2200.meta.json b/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-2000-to-step-2200.meta.json
+new file mode 100644
+index 0000000..9b4b873
+--- /dev/null
++++ b/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-2000-to-step-2200.meta.json
+@@ -0,0 +1 @@
++{"step_id": 2000, "content_type": "video/mp4", "encoder_version": {"backend": "ffmpeg", "version": "b'ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers\\nbuilt with gcc 9 (Ubuntu 9.3.0-10ubuntu2)\\nconfiguration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\\nlibavutil      56. 31.100 / 56. 31.100\\nlibavcodec     58. 54.100 / 58. 54.100\\nlibavformat    58. 29.100 / 58. 29.100\\nlibavdevice    58.  8.100 / 58.  8.100\\nlibavfilter     7. 57.100 /  7. 57.100\\nlibavresample   4.  0.  0 /  4.  0.  0\\nlibswscale      5.  5.100 /  5.  5.100\\nlibswresample   3.  5.100 /  3.  5.100\\nlibpostproc    55.  5.100 / 55.  5.100\\n'", "cmdline": ["ffmpeg", "-nostats", "-loglevel", "error", "-y", "-f", "rawvideo", "-s:v", "600x400", "-pix_fmt", "rgb24", "-framerate", "50", "-i", "-", "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2", "-vcodec", "libx264", "-pix_fmt", "yuv420p", "-r", "50", "/home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-2000-to-step-2200.mp4"]}}
+\ No newline at end of file
+diff --git a/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-2000-to-step-2200.mp4 b/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-2000-to-step-2200.mp4
+new file mode 100644
+index 0000000..9d227ba
+Binary files /dev/null and b/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-2000-to-step-2200.mp4 differ
+diff --git a/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-4000-to-step-4200.meta.json b/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-4000-to-step-4200.meta.json
+new file mode 100644
+index 0000000..d61c7c3
+--- /dev/null
++++ b/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-4000-to-step-4200.meta.json
+@@ -0,0 +1 @@
++{"step_id": 4000, "content_type": "video/mp4", "encoder_version": {"backend": "ffmpeg", "version": "b'ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers\\nbuilt with gcc 9 (Ubuntu 9.3.0-10ubuntu2)\\nconfiguration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\\nlibavutil      56. 31.100 / 56. 31.100\\nlibavcodec     58. 54.100 / 58. 54.100\\nlibavformat    58. 29.100 / 58. 29.100\\nlibavdevice    58.  8.100 / 58.  8.100\\nlibavfilter     7. 57.100 /  7. 57.100\\nlibavresample   4.  0.  0 /  4.  0.  0\\nlibswscale      5.  5.100 /  5.  5.100\\nlibswresample   3.  5.100 /  3.  5.100\\nlibpostproc    55.  5.100 / 55.  5.100\\n'", "cmdline": ["ffmpeg", "-nostats", "-loglevel", "error", "-y", "-f", "rawvideo", "-s:v", "600x400", "-pix_fmt", "rgb24", "-framerate", "50", "-i", "-", "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2", "-vcodec", "libx264", "-pix_fmt", "yuv420p", "-r", "50", "/home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-4000-to-step-4200.mp4"]}}
+\ No newline at end of file
+diff --git a/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-4000-to-step-4200.mp4 b/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-4000-to-step-4200.mp4
+new file mode 100644
+index 0000000..2c8ce48
+Binary files /dev/null and b/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-4000-to-step-4200.mp4 differ
+diff --git a/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-6000-to-step-6200.meta.json b/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-6000-to-step-6200.meta.json
+new file mode 100644
+index 0000000..fe2e5c9
+--- /dev/null
++++ b/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-6000-to-step-6200.meta.json
+@@ -0,0 +1 @@
++{"step_id": 6000, "content_type": "video/mp4", "encoder_version": {"backend": "ffmpeg", "version": "b'ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers\\nbuilt with gcc 9 (Ubuntu 9.3.0-10ubuntu2)\\nconfiguration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\\nlibavutil      56. 31.100 / 56. 31.100\\nlibavcodec     58. 54.100 / 58. 54.100\\nlibavformat    58. 29.100 / 58. 29.100\\nlibavdevice    58.  8.100 / 58.  8.100\\nlibavfilter     7. 57.100 /  7. 57.100\\nlibavresample   4.  0.  0 /  4.  0.  0\\nlibswscale      5.  5.100 /  5.  5.100\\nlibswresample   3.  5.100 /  3.  5.100\\nlibpostproc    55.  5.100 / 55.  5.100\\n'", "cmdline": ["ffmpeg", "-nostats", "-loglevel", "error", "-y", "-f", "rawvideo", "-s:v", "600x400", "-pix_fmt", "rgb24", "-framerate", "50", "-i", "-", "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2", "-vcodec", "libx264", "-pix_fmt", "yuv420p", "-r", "50", "/home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-6000-to-step-6200.mp4"]}}
+\ No newline at end of file
+diff --git a/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-6000-to-step-6200.mp4 b/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-6000-to-step-6200.mp4
+new file mode 100644
+index 0000000..492e4db
+Binary files /dev/null and b/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-6000-to-step-6200.mp4 differ
+diff --git a/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-8000-to-step-8200.meta.json b/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-8000-to-step-8200.meta.json
+new file mode 100644
+index 0000000..d93c06c
+--- /dev/null
++++ b/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-8000-to-step-8200.meta.json
+@@ -0,0 +1 @@
++{"step_id": 8000, "content_type": "video/mp4", "encoder_version": {"backend": "ffmpeg", "version": "b'ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers\\nbuilt with gcc 9 (Ubuntu 9.3.0-10ubuntu2)\\nconfiguration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\\nlibavutil      56. 31.100 / 56. 31.100\\nlibavcodec     58. 54.100 / 58. 54.100\\nlibavformat    58. 29.100 / 58. 29.100\\nlibavdevice    58.  8.100 / 58.  8.100\\nlibavfilter     7. 57.100 /  7. 57.100\\nlibavresample   4.  0.  0 /  4.  0.  0\\nlibswscale      5.  5.100 /  5.  5.100\\nlibswresample   3.  5.100 /  3.  5.100\\nlibpostproc    55.  5.100 / 55.  5.100\\n'", "cmdline": ["ffmpeg", "-nostats", "-loglevel", "error", "-y", "-f", "rawvideo", "-s:v", "600x400", "-pix_fmt", "rgb24", "-framerate", "50", "-i", "-", "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2", "-vcodec", "libx264", "-pix_fmt", "yuv420p", "-r", "50", "/home/gauravb/Documents/LearnProgramming/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-8000-to-step-8200.mp4"]}}
+\ No newline at end of file
+diff --git a/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-8000-to-step-8200.mp4 b/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-8000-to-step-8200.mp4
+new file mode 100644
+index 0000000..7c210a6
+Binary files /dev/null and b/learnStableBaselines/7_wandb/videos/oly62s5z/rl-video-step-8000-to-step-8200.mp4 differ
+diff --git a/learnStableBaselines/8_vec_env/1_vec_env.py b/learnStableBaselines/8_vec_env/1_vec_env.py
+new file mode 100644
+index 0000000..4f02906
+--- /dev/null
++++ b/learnStableBaselines/8_vec_env/1_vec_env.py
+@@ -0,0 +1,70 @@
++import gym
++import numpy as np
++
++from stable_baselines3 import PPO
++from stable_baselines3.common.vec_env import DummyVecEnv, SubprocVecEnv
++from stable_baselines3.common.env_util import make_vec_env
++from stable_baselines3.common.utils import set_random_seed
++import wandb
++from wandb.integration.sb3 import WandbCallback
++
++
++
++
++
++def make_env(env_id, rank, seed=0):
++    """
++    Utility function for multiprocessed env.
++
++    :param env_id: (str) the environment ID
++    :param num_env: (int) the number of environments you wish to have in subprocesses
++    :param seed: (int) the inital seed for RNG
++    :param rank: (int) index of the subprocess
++    """
++    def _init():
++        env = gym.make(env_id)
++        env.seed(seed + rank)
++        return env
++    set_random_seed(seed)
++    return _init
++
++if __name__ == '__main__':
++
++    config = {
++        "policy_type": "MlpPolicy",
++        "total_timesteps": 25000,
++        "env_name": "CartPole-v1",
++    }
++    run = wandb.init(
++        project="sb3",
++        dir="/home/gauravb/Documents/LearnProgramming/wandbsavedfilesvec",
++        config=config,
++        sync_tensorboard=True,  # auto-upload sb3's tensorboard metrics
++        monitor_gym=True,  # auto-upload the videos of agents playing the game
++        save_code=True,  # optional
++    )
++
++
++    env_id = "CartPole-v1"
++    num_cpu = 4  # Number of processes to use
++    # Create the vectorized environment
++    env = SubprocVecEnv([make_env(env_id, i) for i in range(num_cpu)])
++
++    # Stable Baselines provides you with make_vec_env() helper
++    # which does exactly the previous steps for you.
++    # You can choose between `DummyVecEnv` (usually faster) and `SubprocVecEnv`
++    # env = make_vec_env(env_id, n_envs=num_cpu, seed=0, vec_env_cls=SubprocVecEnv)
++
++    model = PPO('MlpPolicy', env, verbose=1, tensorboard_log=f"runs/{run.id}" )
++    model.learn(total_timesteps=25_000,  callback=[WandbCallback(
++        gradient_save_freq=100,
++        model_save_path=f"models/{run.id}",
++        verbose=2,
++
++    ),])
++
++    obs = env.reset()
++    for _ in range(1000):
++        action, _states = model.predict(obs)
++        obs, rewards, dones, info = env.step(action)
++        env.render()
+\ No newline at end of file
+diff --git a/learnStableBaselines/8_vec_env/models/3lpd4swh/model.zip b/learnStableBaselines/8_vec_env/models/3lpd4swh/model.zip
+new file mode 100644
+index 0000000..a3a42f7
+Binary files /dev/null and b/learnStableBaselines/8_vec_env/models/3lpd4swh/model.zip differ
+diff --git a/learnStableBaselines/8_vec_env/models/cediwsp0/model.zip b/learnStableBaselines/8_vec_env/models/cediwsp0/model.zip
+new file mode 100644
+index 0000000..a9a79ff
+Binary files /dev/null and b/learnStableBaselines/8_vec_env/models/cediwsp0/model.zip differ
+diff --git a/learnStableBaselines/8_vec_env/runs/3lpd4swh/PPO_1/events.out.tfevents.1651179427.gauravb-ThinkStation-P340.860350.0 b/learnStableBaselines/8_vec_env/runs/3lpd4swh/PPO_1/events.out.tfevents.1651179427.gauravb-ThinkStation-P340.860350.0
+new file mode 100644
+index 0000000..4f01a43
+Binary files /dev/null and b/learnStableBaselines/8_vec_env/runs/3lpd4swh/PPO_1/events.out.tfevents.1651179427.gauravb-ThinkStation-P340.860350.0 differ

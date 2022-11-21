@@ -5,3 +5,6 @@
 *.tar.gz
 datasets
 data
+wandb
+wandbsavedfiles
+pytorch_car_caring
